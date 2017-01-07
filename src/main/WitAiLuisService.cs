@@ -6,7 +6,7 @@ using com.valgut.libs.bots.Wit;
 using Microsoft.Bot.Builder.Luis;
 using Microsoft.Bot.Builder.Luis.Models;
 
-namespace Bot.Builder.Luis.WitAi
+namespace Adfa.Bot.Builder.Luis.WitAi
 {
     [Serializable]
     public class WitAiLuisService : ILuisService

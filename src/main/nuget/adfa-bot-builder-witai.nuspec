@@ -2,7 +2,7 @@
 <package >
   <metadata>
     <id>Adfa.Bot.Builder.WitAi</id>
-    <version>0.1.0</version>
+    <version>0.1.1</version>
     <title>Wit.ai integration with Microsoft C# Bot Builder's LuisDialog.</title>
     <authors>Adebisi Foluso A.</authors>
     <owners>Adebisi Foluso A.</owners>
