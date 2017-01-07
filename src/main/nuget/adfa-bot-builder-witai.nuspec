@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="Windows-1252"?>
+<package >
+  <metadata>
+    <id>Adfa.Bot.Builder.WitAi</id>
+    <version>0.1.0</version>
+    <title>Wit.ai integration with Microsoft C# Bot Builder's LuisDialog.</title>
+    <authors>Adebisi Foluso A.</authors>
+    <owners>Adebisi Foluso A.</owners>
+    <licenseUrl>https://github.com/adebisi-fa/Bot.Builder.WitAi/blob/master/LICENSE</licenseUrl>
+    <projectUrl>https://github.com/adebisi-fa/Bot.Builder.WitAi</projectUrl>
+    <iconUrl>http://uploads.webflow.com/565d5a0cdee07e0131e751d2/565d5a0d6555090131ce1561_botan_logo.png</iconUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <description>Wit.ai integration with Microsoft C# Bot Builder's LuisDialog.</description>
+    <releaseNotes>
+      Implements the C# Bot Builder's ILuisService for the Wit.ai NLP service.
+    </releaseNotes>
+    <copyright>Copyright 2017</copyright>
+    <tags>Luis Wit.ai NLP</tags>
+    <dependencies>
+      <dependency id="Wit.ai.net" version="0.1.1.0" />
+      <dependency id="Microsoft.Bot.Builder" version="3.5.0" />
+    </dependencies>
+  </metadata>
+</package>
