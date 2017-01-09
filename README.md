@@ -23,3 +23,28 @@ public class MyLuisDialog : LuisDialog<string> {
     }
 }
 ```
+
+## Note
+
+Since wit.ai doesn't have **Intent** as a first class feature (as available in Microsoft LIUS), your query must include at least an entity with the name "intent".  
+
+You can then setup a **LuisIntent** attribute with the value of the "intent" entity, in a **LuisDialog** derivative class.  The following example setup a handler for an [wit.ai](http://wit.ai) entity with the name **"intent"**, and value **"register"**:
+
+```c#
+public class MyWitAiDialog : LuisDialog<string> {
+    public MyLuisDialog() : base(new WitAiLuisService("wit-token-goes-here")) { }
+    ...
+    [LuisIntent("register")]
+    public async Task Register(IDialogContext context, LuisResult result)
+    {
+        //
+        // Retrieve registration information from 'result' parameter.
+        // Registration logic goes here
+        //
+        
+        // Report success
+        await context.PostAsync($"Registration completed.");
+        ...
+    }
+}
+```
