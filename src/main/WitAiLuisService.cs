@@ -57,5 +57,10 @@ namespace Adfa.Bot.Builder.Luis.WitAi
             _text = text;
             return new Uri("https://api.wit.ai/message?v=20160526&q=" + Uri.EscapeUriString(text));
         }
+
+        public virtual LuisRequest ModifyRequest(LuisRequest request)
+        {
+            return request;
+        }
     }
 }
